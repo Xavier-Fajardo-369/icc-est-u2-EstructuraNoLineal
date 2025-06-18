@@ -12,7 +12,8 @@ public class App {
         arbol.insert(14);
         arbol.insert(19);
         
-        //arbol.imprimirArbol();
+        arbol.imprimirArbol();
+        System.out.println();
         arbol.printPreOrder();
         System.out.println();
         arbol.printPostOrder();
