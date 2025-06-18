@@ -66,6 +66,20 @@ public class BinaryTree {
             printInOrderRec(nodo.getDerecha());
         }
     }
+    public boolean findeValue(int valor) {
+        return findeValueRec(root, valor);
+    }
+    private boolean findeValueRec(Node nodo, int valor) {
+        if (nodo == null) {
+            return false;
+        }
+        if (nodo.getValor() == valor) {
+            return true;
+        }
+        return valor < nodo.getValor() ? 
+            findeValueRec(nodo.getIzquierda(), valor) : 
+            findeValueRec(nodo.getDerecha(), valor);
+    }
     
 
     

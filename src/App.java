@@ -21,6 +21,17 @@ public class App {
         arbol.printInOrder();
         System.out.println();
 
+        if(arbol.findeValue(23)) {
+            System.out.println("El valor 23 se encuentra en el árbol.");
+        } else {
+            System.out.println("El valor 23 no se encuentra en el árbol.");
+        }
+        if(arbol.findeValue(77)) {
+            System.out.println("El valor 77 se encuentra en el árbol.");
+        } else {
+            System.out.println("El valor 77 no se encuentra en el árbol.");
+        }
+
         
 
     }
