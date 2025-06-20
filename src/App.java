@@ -43,17 +43,17 @@ public class App {
         System.out.println("Peso del árbol: " );
         arbol.printPeso();
         
-        System.out.println("ARBOL ESTA BALANCEADO " + arbol.isBalanced());
+        System.out.println("Arbol esta balanceado  " + arbol.isBalanced());
 
         if (arbol.findeValue(15)) {
-         System.out.println("EXISTE EL NODO 15 true");
+         System.out.println("Existe el nodo 15 ");
         } else {
-        System.out.println("EXISTE EL NODO 15 false");
+        System.out.println("Existe el 15 ");
         arbol.insert(15);
-        System.out.println("AGREGAMOS VALOR 15");
+        System.out.println("Agregamos el  15");
         }
 
-        System.out.println("ARBOL ESTA BALANCEADO " + arbol.isBalanced());
+        System.out.println("Arbol esta balanceado " + arbol.isBalanced());
 
         if (!arbol.isBalanced()) {
         arbol.printNodosDesiquilibrados();
