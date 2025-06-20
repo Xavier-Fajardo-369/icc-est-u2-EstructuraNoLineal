@@ -4,21 +4,12 @@ public class Node {
     private int valor;
     private Node izquierda;
     private Node derecha;
+    
 
     public Node(int valor) {
         this.valor = valor;
         this.izquierda = null;
         this.derecha = null;
-    }
-    
-   
-    @Override
-    public String toString() {
-        return "Node{" +
-                "valor=" + valor +
-                ", izquierda=" + izquierda +
-                ", derecha=" + derecha +
-                '}';
     }
 
 
@@ -50,7 +41,21 @@ public class Node {
     public void setDerecha(Node derecha) {
         this.derecha = derecha;
     }
+    @Override
+    public String toString() {
+        return "Node{" +
+                "valor=" + valor +
+                ", izquierda=" + izquierda +
+                ", derecha=" + derecha +
+                '}';
+    }
+   
+    
 
+    
+    
+
+    
 
 
 
