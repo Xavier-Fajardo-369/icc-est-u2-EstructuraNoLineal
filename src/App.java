@@ -1,8 +1,10 @@
-import Materia.Controllers.BinaryTree;
+import Materia.Controllers.AVLTree;
+//import Materia.Controllers.BinaryTree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        BinaryTree arbol = new BinaryTree();
+        //BinaryTree arbol = new BinaryTree();
+        /* 
         arbol.insert(50);
         arbol.insert(17);
         arbol.insert(76);
@@ -11,6 +13,12 @@ public class App {
         arbol.insert(54);
         arbol.insert(14);
         arbol.insert(19);
+        */
+        AVLTree arbol = new AVLTree();
+        arbol.insert(5);
+        arbol.insert(20);
+        arbol.insert(15);
+        
 
         /* 
         arbol.imprimirArbol();
@@ -18,11 +26,11 @@ public class App {
         arbol.printPreOrder();
         System.out.println();
         arbol.printPostOrder();
-        */
+        
         System.out.println("Arbol InOrder: ");
         arbol.printInOrder();
         System.out.println();
-        /* 
+        
         if(arbol.findeValue(23)) {
             System.out.println("El valor 23 se encuentra en el árbol.");
         } else {
@@ -33,7 +41,7 @@ public class App {
         } else {
             System.out.println("El valor 77 no se encuentra en el árbol.");
         }
-        */
+        
 
         
         arbol.printWithHeightTree();
@@ -58,14 +66,10 @@ public class App {
         if (!arbol.isBalanced()) {
         arbol.printNodosDesiquilibrados();
         }
-
-
-       
-            
-        
-       
-       
-        
+        System.out.println("Arbol InOrder con Factor de equilibrio: ");
+        arbol.printInOrderBalancedFactory();
+        */
+   
 
     }   
 

@@ -1,6 +1,7 @@
 package Materia.Models;
 
 public class Node {
+    private int height;
     private int valor;
     private Node izquierda;
     private Node derecha;
@@ -48,6 +49,16 @@ public class Node {
                 ", izquierda=" + izquierda +
                 ", derecha=" + derecha +
                 '}';
+    }
+
+
+    public int getHeight() {
+        return height;
+    }
+
+
+    public void setHeight(int height) {
+        this.height = height;
     }
    
     
